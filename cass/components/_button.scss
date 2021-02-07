@@ -1,0 +1,14 @@
+.btn {
+  color: $white-color;
+  font-weight: 700;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+
+  cursor: pointer;
+
+  border: none;
+  border-radius: 4px;
+}
+.btn-primary {
+  background-color: $accent-color;
+}

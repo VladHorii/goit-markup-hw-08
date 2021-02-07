@@ -1,0 +1,37 @@
+/* Contact  */
+.contact {
+  @include centeredFlex();
+}
+.team .contact {
+  padding-top: 16px;
+  padding-bottom: 30px;
+}
+.contact__list {
+  display: flex;
+}
+.contact__item + .contact__item {
+  margin-left: 10px;
+}
+.contact__link {
+  @include centeredFlex();
+
+  width: 44px;
+  height: 44px;
+
+  color: $icon-color;
+  border-radius: 50%;
+  background-color: transparent;
+  outline: none;
+
+  transition: color $anim-time $animation, background-color $anim-time $animation;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $white-color;
+  }
+}
+
+.contact__icon {
+  width: 20px;
+  height: 20px;
+}

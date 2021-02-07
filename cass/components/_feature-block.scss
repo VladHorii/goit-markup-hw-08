@@ -1,0 +1,37 @@
+/* feature block */
+.feature-block {
+  padding: 94px 0px;
+}
+.feature-block__list {
+  display: flex;
+}
+
+.feature-block__icon {
+  @include centeredFlex();
+
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: $gray-color;
+  border-radius: 4px;
+}
+
+.feature-block__card + .feature-block__card {
+  margin-left: 30px;
+}
+.feature-block__title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.feature-block__text {
+  color: $secondary-text-color;
+
+  font-size: 14px;
+  line-height: 1.71;
+  font-weight: 400;
+}

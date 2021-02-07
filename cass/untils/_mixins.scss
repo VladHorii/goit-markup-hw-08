@@ -1,0 +1,8 @@
+@mixin anim($type: all, $time: 250ms, $animName: $default_anim) {
+  transition: $type $time $animName;
+}
+@mixin centeredFlex($type: flex) {
+  display: $type;
+  align-items: center;
+  justify-content: center;
+}

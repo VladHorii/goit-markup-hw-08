@@ -1,0 +1,134 @@
+.form__group {
+  margin-bottom: 10px;
+}
+
+.form__input {
+  width: 100%;
+  min-height: 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 12px 10px 42px;
+  cursor: pointer;
+
+  transition: border $anim-time $animation;
+}
+
+.form__label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+
+  letter-spacing: 0.01em;
+
+  color: $secondary-text-color;
+
+  margin-bottom: 4px;
+}
+
+.form__field {
+  position: relative;
+}
+.form__field:focus-within .form__input,
+.form__group:focus-within .form__textarea {
+  border: 1px solid $accent-color;
+  border-radius: 4px;
+  outline: none;
+}
+.form__field:focus-within .form__icon {
+  fill: $accent-color;
+}
+
+.form__textarea {
+  font-size: 12px;
+  resize: none;
+  width: 100%;
+  height: 120px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 16px 12px;
+
+  cursor: pointer;
+
+  transition: border $anim-time $animation;
+  &::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.form__group--checkbox {
+  display: flex;
+  align-items: center;
+
+  margin-left: 12px;
+  cursor: pointer;
+}
+.checkbox--icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+
+  border: 2px solid $main-text-color;
+  border-radius: 2px;
+  background: transparent;
+  transition: border $anim-time $animation, background $anim-time $animation;
+}
+.form__checkbox:checked + .checkbox--icon {
+  border-color: transparent;
+  background-color: $accent-color;
+  background-image: url('../images/svg/form/checkbox-on.svg');
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.form__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.form__label--policy {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+
+  color: $secondary-text-color;
+}
+a.form__link--policy {
+  color: $accent-color;
+  text-decoration: underline;
+}
+.form__btn {
+  display: block;
+  margin: 30px auto 0px;
+  padding: 10px 55px;
+
+  font-weight: 700;
+  line-height: 1.87;
+
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.06em;
+
+  color: $white-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.form__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  fill: currentColor;
+}

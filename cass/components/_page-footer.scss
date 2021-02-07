@@ -1,0 +1,23 @@
+.page-footer {
+  background-color: $footer-background-color;
+  padding: 60px 0;
+}
+.page-footer .logo {
+  margin-bottom: 20px;
+}
+
+.page-footer .address__list {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.page-footer .address__item + .address__item {
+  margin-top: 9px;
+}
+.address__sity {
+  color: $white-color;
+}
+
+.page-footer > .container {
+  display: flex;
+}

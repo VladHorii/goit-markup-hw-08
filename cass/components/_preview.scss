@@ -1,0 +1,33 @@
+/* Preview block */
+.preview {
+  padding-bottom: 94px;
+}
+.preview__title {
+  margin-bottom: 50px;
+}
+.preview__body {
+  display: flex;
+}
+.preview__box {
+  position: relative;
+  display: inline-flex;
+}
+.preview__box + .preview__box {
+  margin-left: 30px;
+}
+.preview__description {
+  position: absolute;
+  width: 100%;
+  padding: 27px 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+
+  background-color: rgba(47, 48, 58, 0.8);
+  color: $white-color;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}

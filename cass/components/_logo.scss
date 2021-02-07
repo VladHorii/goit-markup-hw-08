@@ -1,0 +1,14 @@
+/* Логотип */
+.logo__text {
+  color: $accent-color;
+  font-family: $logo-font;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.logo__subtext {
+  color: $black-color;
+}
+.logo__subtext-white {
+  color: $white-color;
+}
