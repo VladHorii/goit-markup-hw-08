@@ -1,17 +1,26 @@
 /* Clients block */
 .client {
-  padding: 94px 0;
+  padding: 60px 0;
 }
 .client__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .client__list {
   display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+.client__card {
+  margin: 15px;
+
+  width: calc(50% - 30px);
+  height: 90px;
 }
 .client__link {
   @include centeredFlex();
-  width: 170px;
-  height: 90px;
+
+  height: 100%;
+
   border: 1px solid $icon-color;
   border-radius: 4px;
   color: $icon-color;
@@ -23,5 +32,5 @@
   }
 }
 .client__card + .client__card {
-  margin-left: 30px;
+  // margin-left: 30px;
 }

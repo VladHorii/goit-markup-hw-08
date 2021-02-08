@@ -1,26 +1,31 @@
 /* Header */
 .page-header {
-  /* height: 80px; */
   border: 1px solid #ececec;
+  height: 60px;
 }
-.page-header > .container {
+.page-nav {
   display: flex;
   align-items: center;
+  height: 100%;
 }
 
+.page-header .address,
+.page-header .nav {
+  display: none;
+}
 .page-nav {
-  @include centeredFlex();
+  // @include centeredFlex();
 }
 
 .page-header .logo {
-  margin-right: 93px;
+  // margin-right: 93px;
 }
 /* Главная навигация */
 .nav {
-  display: flex;
+  // display: flex;
 }
 .nav__item + .nav__item {
-  margin-left: 50px;
+  // margin-left: 50px;
 }
 .nav__link {
   color: $main-text-color;
@@ -32,11 +37,11 @@
 }
 .nav__item {
   position: relative;
-  padding: 32px 0;
+  // padding: 32px 0;
 }
 .nav__link--active::after {
   content: '';
-  width: 100%;
+  // width: 100%;
   height: 4px;
   position: absolute;
   bottom: -1px;
@@ -48,8 +53,8 @@
   color: $accent-color;
 }
 .link {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
   transition: color $anim-time $animation;
   &:hover,
   &:focus {
@@ -57,11 +62,11 @@
   }
 }
 .address {
-  margin-left: auto;
+  // margin-left: auto;
 }
 
 .page-header .address__list {
-  @include centeredFlex();
+  // @include centeredFlex();
 
   font-size: 14px;
   line-height: 1.14;
@@ -72,7 +77,7 @@
   color: $secondary-text-color;
 }
 .page-header .address__item + .address__item {
-  margin-left: 50px;
+  // margin-left: 50px;
 }
 
 .portfolio .page-header {

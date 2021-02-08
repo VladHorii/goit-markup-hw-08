@@ -1,10 +1,10 @@
 /* main block */
 .main-block {
   max-width: 1600px;
-  min-height: 600px;
+  min-height: 400px;
 
-  padding: 50px 0px;
-  margin: 0 auto;
+  // padding: 50px 0px;
+  // margin: 0 auto;
 
   @include centeredFlex();
   text-align: center;
@@ -19,20 +19,23 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  /*
+  до 576
+  до 768 (может до 960)
+  */
 }
 .main-block__text {
   color: $white-color;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  transition: background-color $anim-time $animation, box-shadow $anim-time $animation;
 }
 .main-block__button {
   padding: 10px 32px;
   margin-top: 30px;
+  transition: background-color $anim-time $animation, box-shadow $anim-time $animation;
   &:hover,
   &:focus {
     background-color: #188ce8;

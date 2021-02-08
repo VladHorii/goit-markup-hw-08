@@ -1,27 +1,28 @@
 /* feature block */
 .feature-block {
-  padding: 94px 0px;
+  padding: 60px 0px;
 }
 .feature-block__list {
   display: flex;
+  flex-direction: column;
 }
 
 .feature-block__icon {
   @include centeredFlex();
-
-  width: 270px;
-  height: 120px;
   margin-bottom: 30px;
 
   background-color: $gray-color;
   border-radius: 4px;
+  padding: 25px 0;
 }
 
-.feature-block__card + .feature-block__card {
-  margin-left: 30px;
+.feature-block__card {
+  max-width: 450px;
 }
 .feature-block__title {
   margin-bottom: 10px;
+
+  text-align: center;
 
   font-weight: 700;
   font-size: 14px;

@@ -1,9 +1,12 @@
 /* Mailing in footer */
 .mailing {
-  margin-top: 12px;
-  margin-left: auto;
+  width: 100%;
+  // margin-top: 12px;
+  // margin-left: auto;
 }
 .mailing__title {
+  text-align: center;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -12,13 +15,15 @@
   color: $white-color;
 }
 .mailing__content {
-  display: flex;
-  margin-top: 20px;
+  @include centeredFlex;
+  flex-direction: column;
 }
 .mailing__input {
-  width: 358px;
+  margin-bottom: 20px;
+  width: 100%;
+  // width: 358px;
   padding: 15px 16px;
-  margin-right: 12px;
+  // margin-right: 12px;
 
   font-weight: 400;
   font-size: 16px;
@@ -32,8 +37,8 @@
 }
 .mailing__btn {
   padding: 10px 29px;
-  /* width: 200px;
-  height: 50px; */
+  // width: 200px;
+  // height: 50px;
 
   font-weight: 700;
   line-height: 1.87;

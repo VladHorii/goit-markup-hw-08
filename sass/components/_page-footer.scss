@@ -3,6 +3,7 @@
   padding: 60px 0;
 }
 .page-footer .logo {
+  text-align: center;
   margin-bottom: 20px;
 }
 
@@ -10,6 +11,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  text-align: center;
 }
 .page-footer .address__item + .address__item {
   margin-top: 9px;
@@ -20,4 +22,13 @@
 
 .page-footer > .container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__join {
+  margin: 60px 0;
+}
+.join__title {
+  text-align: center;
+  margin-bottom: 20px;
 }
