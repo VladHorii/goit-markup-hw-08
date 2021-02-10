@@ -17,61 +17,82 @@
   <body>
     <header class="page-header">
       <div class="container">
-        <nav class="page-nav">
-          <div class="logo">
-            <a class="logo__text" href="./index.html">
-              Web<span class="logo__subtext">Studio</span>
-            </a>
+        <div class="logo">
+          <a class="logo__text" href="./index.html">
+            Web<span class="logo__subtext">Studio</span>
+          </a>
+        </div>
+
+        <button
+          class="btn-burger"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="icon-cross" href="./images/svg/burger.svg#icon-cross"></use>
+            <use class="icon-menu" href="./images/svg/burger.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <!-- Только в бургере -->
+        <div class="menu-container" data-menu>
+          <nav class="page-nav">
+            <ul class="nav">
+              <li class="nav__item">
+                <a href="./index.html" class="nav__link nav__link--active link">Студия</a>
+              </li>
+              <li class="nav__item">
+                <a href="./portfolio.html" class="nav__link link">Портфолио</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <address class="address">
+            <ul class="address__list">
+              <li class="address__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="address__email address__link link"
+                >
+                  <svg class="icon address__icon" width="16" height="12">
+                    <use href="./images/svg/sprite.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="address__item">
+                <a href="tel:+380961111111" class="address__phone address__link link">
+                  <svg class="icon address__icon" width="10" height="16">
+                    <use href="./images/svg/sprite.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <div class="social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a href="#page-footer" class="social__link">Instagram</a>
+              </li>
+              <li class="social__item">
+                <a href="#page-footer" class="social__link">Twitter</a>
+              </li>
+              <li class="social__item">
+                <a href="#page-footer" class="social__link">Facebook</a>
+              </li>
+              <li class="social__item">
+                <a href="#page-footer" class="social__link">LinkedIn</a>
+              </li>
+            </ul>
           </div>
-
-          <button
-            type="button"
-            class="btn-burger"
-            aria-expanded="false"
-            aria-controls="menu-container"
-            data-menu-button
-          >
-            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-              <use class="icon-cross" href="./images/svg/burger.svg#icon-cross"></use>
-              <use class="icon-menu" href="./images/svg/burger.svg#icon-menu"></use>
-            </svg>
-          </button>
-
-          <ul class="nav">
-            <li class="nav__item">
-              <a href="./index.html" class="nav__link nav__link--active link">Студия</a>
-            </li>
-            <li class="nav__item">
-              <a href="./portfolio.html" class="nav__link link">Портфолио</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <address class="address">
-          <ul class="address__list">
-            <li class="address__item">
-              <a
-                href="mailto:info@devstudio.com"
-                class="address__email address__link link"
-              >
-                <svg class="icon address__icon" width="16" height="12">
-                  <use href="./images/svg/sprite.svg#icon-mail"></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-            <li class="address__item">
-              <a href="tel:+380961111111" class="address__phone address__link link">
-                <svg class="icon address__icon" width="10" height="16">
-                  <use href="./images/svg/sprite.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
+        </div>
+        <!--  -->
       </div>
     </header>
 
@@ -153,7 +174,7 @@
             <li class="preview__box">
               <img
                 class="preview__img"
-                src="images/box-1.jpg"
+                src="./images/main/box-1.jpg"
                 alt="Планшет с клавиатурой"
                 width="370"
                 height="294"
@@ -163,7 +184,7 @@
             <li class="preview__box">
               <img
                 class="preview__img"
-                src="images/box-2.jpg"
+                src="./images/main/box-2.jpg"
                 alt="Ноутбук"
                 width="370"
                 height="294"
@@ -173,7 +194,7 @@
             <li class="preview__box">
               <img
                 class="preview__img"
-                src="images/box-3.jpg"
+                src="./images/main/box-3.jpg"
                 alt="Планшет в руке"
                 width="370"
                 height="294"
@@ -191,7 +212,7 @@
           <ul class="team__body">
             <li class="team__card">
               <img
-                src="images/avatar-1.jpg"
+                src="./images/main/avatar-1.jpg"
                 alt="Игорь Демьяненко"
                 class="team__img"
                 width="300"
@@ -236,7 +257,7 @@
             </li>
             <li class="team__card">
               <img
-                src="images/avatar-2.jpg"
+                src="./images/main/avatar-2.jpg"
                 alt="Ольга Репина"
                 class="team__img"
                 width="300"
@@ -280,7 +301,7 @@
             </li>
             <li class="team__card">
               <img
-                src="images/avatar-3.jpg"
+                src="./images/main/avatar-3.jpg"
                 alt="Николай Тарасов"
                 class="team__img"
                 width="300"
@@ -324,7 +345,7 @@
             </li>
             <li class="team__card">
               <img
-                src="images/avatar-4.jpg"
+                src="./images/main/avatar-4.jpg"
                 alt="Михаил Ермаков"
                 class="team__img"
                 width="300"
@@ -425,6 +446,7 @@
         </div>
       </section>
     </main>
+    <!--  -->
     <div class="modal__backdrop modal__backdrop--hidden" data-backdrop>
       <div class="modal__window">
         <button class="modal__btn" data-modal-close>
@@ -501,9 +523,9 @@
       <div class="container">
         <div class="page-footer__nav">
           <div class="logo">
-            <a class="logo__text" href="./index.html"
-              >Web<span class="logo__subtext logo__subtext-white">Studio</span></a
-            >
+            <a class="logo__text" href="./index.html">
+              Web<span class="logo__subtext logo__subtext-white">Studio</span>
+            </a>
           </div>
 
           <address class="address">
@@ -585,5 +607,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

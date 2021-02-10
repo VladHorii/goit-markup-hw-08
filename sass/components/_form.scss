@@ -1,14 +1,15 @@
 .form__group {
-  // margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .form__input {
-  // width: 100%;
-  // min-height: 40px;
+  width: 100%;
+  min-height: 40px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  // padding: 12px 12px 10px 42px;
+  padding: 12px;
+  padding-left: 42px;
   cursor: pointer;
 
   transition: border $anim-time $animation;
@@ -23,7 +24,7 @@
 
   color: $secondary-text-color;
 
-  // margin-bottom: 4px;
+  margin-bottom: 4px;
 }
 
 .form__field {
@@ -42,12 +43,12 @@
 .form__textarea {
   font-size: 12px;
   resize: none;
-  // width: 100%;
-  // height: 120px;
+  width: 100%;
+  height: 120px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  // padding: 16px 12px;
+  padding: 16px 12px;
 
   cursor: pointer;
 
@@ -62,8 +63,8 @@
 }
 
 .form__group--checkbox {
-  // display: flex;
-  // align-items: center;
+  display: flex;
+  align-items: center;
 
   // margin-left: 12px;
   cursor: pointer;
@@ -99,10 +100,8 @@
 }
 .form__label--policy {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  // text-align: center;
-
+  font-size: 12px; // 14px
+  line-height: 1.16; // 1.71
   color: $secondary-text-color;
 }
 a.form__link--policy {
@@ -111,8 +110,8 @@ a.form__link--policy {
 }
 .form__btn {
   display: block;
-  // margin: 30px auto 0px;
-  // padding: 10px 55px;
+  margin: 30px auto 0px;
+  padding: 10px 55px;
 
   font-weight: 700;
   line-height: 1.87;
@@ -127,8 +126,8 @@ a.form__link--policy {
 
 .form__icon {
   position: absolute;
-  // top: 50%;
+  top: 50%;
   left: 12px;
-  // transform: translateY(-50%);
+  transform: translateY(-50%);
   fill: currentColor;
 }

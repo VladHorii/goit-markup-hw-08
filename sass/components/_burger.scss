@@ -1,18 +1,88 @@
 .btn-burger {
   background-color: transparent;
   border: none;
+  margin: 10px 0;
   margin-left: auto;
+  width: 40px;
+  height: 40px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  // @include centeredFlex;
 }
 .btn-burger .icon-cross {
   display: none;
 }
 
-.btn-burger.is-open .icon-cross {
-  display: block;
+.btn-burger.is-open {
+  .icon-cross {
+    display: block;
+  }
+  .icon-menu {
+    display: none;
+  }
 }
 
-.btn-burger.is-open .icon-menu {
-  display: none;
+.menu-container {
+  width: 100%;
+  @media screen and (max-width: 767px) {
+    padding: 0 40px 48px 40px;
+
+    overflow-y: scroll;
+    display: none;
+    position: absolute;
+    background-color: $white-color;
+
+    height: calc(100vh - 60px);
+    left: 0;
+    top: 100%;
+    &.is-open {
+      display: flex;
+      flex-direction: column;
+      // display: block;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+.social {
+  display: flex;
+  margin-top: 64px;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.social__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social__item {
+  // padding: 10px;
+}
+
+.social__link {
+  position: relative;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: $accent-color;
+}
+.social__item + .social__item {
+  padding-left: 20px;
+  & > .social__link::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    height: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    // transform: rotate(90deg);
+  }
 }
 
 // .btn-burger {
@@ -50,18 +120,4 @@
 //     justify-content: space-between;
 //     flex-grow: 1;
 //   }
-// }
-
-// .navigation,
-// .contacts {
-//   height: 50px;
-//   width: 140px;
-// }
-
-// .navigation {
-//   outline: 1px solid teal;
-// }
-
-// .contacts {
-//   outline: 1px solid orange;
 // }

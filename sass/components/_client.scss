@@ -13,8 +13,11 @@
 .client__card {
   margin: 15px;
 
-  width: calc(50% - 30px);
   height: 90px;
+  width: calc(50% - 30px);
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 30px * 3) / 3);
+  }
 }
 .client__link {
   @include centeredFlex();

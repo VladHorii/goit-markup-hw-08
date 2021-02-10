@@ -16,19 +16,39 @@
 .page-footer .address__item + .address__item {
   margin-top: 9px;
 }
-.address__sity {
-  color: $white-color;
-}
 
 .page-footer > .container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+
+  @media screen and (max-width: $tablet - 1px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (min-width: $tablet) {
+    flex-wrap: wrap;
+  }
 }
 .footer__join {
-  margin: 60px 0;
+  @media screen and (max-width: $tablet - 1px) {
+    margin: 60px 0;
+  }
+  @media screen and (min-width: $tablet) {
+    // margin-left: auto;
+  }
 }
 .join__title {
   text-align: center;
   margin-bottom: 20px;
+}
+.page-footer .address__link {
+  color: $secondary-text-color;
+}
+.page-footer .address__sity {
+  color: $white-color;
+}
+.page-footer__nav {
+  @media screen and (min-width: $tablet) {
+    margin-left: 76px;
+    margin-right: 165px;
+  }
 }
