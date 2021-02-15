@@ -1,22 +1,35 @@
 /* Clients block */
 .client {
   padding: 60px 0;
+  @media screen and (min-width: $desktop) {
+    padding: 94px 0;
+  }
 }
 .client__title {
   margin-bottom: 30px;
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
 }
 .client__list {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
+
+  @media screen and (max-width: $desktop - 1px) {
+    margin: -15px;
+  }
 }
 .client__card {
-  margin: 15px;
-
   height: 90px;
   width: calc(50% - 30px);
   @media screen and (min-width: $tablet) {
     width: calc((100% - 30px * 3) / 3);
+  }
+  @media screen and (max-width: $desktop) {
+    margin: 15px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 170px;
   }
 }
 .client__link {
@@ -35,5 +48,7 @@
   }
 }
 .client__card + .client__card {
-  // margin-left: 30px;
+  @media screen and (min-width: $desktop) {
+    margin-left: 30px;
+  }
 }

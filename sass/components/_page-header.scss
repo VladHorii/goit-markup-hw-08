@@ -10,7 +10,9 @@
 .page-header .container {
   display: flex;
   align-items: center;
-  min-width: 100%;
+  @media screen and (max-width: $desktop - 1px) {
+    min-width: 100%;
+  }
 }
 body.mobile-nav-open .logo {
   display: none;
@@ -22,18 +24,14 @@ body.mobile-nav-open .logo {
   }
   @media screen and (min-width: $tablet) {
     display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // height: 100%;
   }
 }
 .page-nav {
   @media screen and (min-width: $tablet) {
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
     margin-left: 88px;
-    // height: 100%;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: 93px;
   }
 }
 .nav__link {
@@ -58,10 +56,10 @@ body.mobile-nav-open .logo {
 }
 .nav__item + .nav__item {
   @media screen and (max-width: $tablet - 1px) {
-    padding-top: 32px;
+    margin-top: 32px;
   }
   @media screen and (min-width: $tablet) {
-    padding-left: 50px;
+    margin-left: 50px;
   }
 }
 .nav__link--active::after {
@@ -76,18 +74,20 @@ body.mobile-nav-open .logo {
     border-radius: 2px;
   }
 }
-.nav__link--active {
-  // position: relative;
-  color: $accent-color;
-}
+
 .link {
   // display: flex;
   // align-items: center;
+  color: $main-text-color;
   transition: color $anim-time $animation;
   &:hover,
   &:focus {
     color: $accent-color;
   }
+}
+.nav__link--active {
+  // position: relative;
+  color: $accent-color;
 }
 .page-header .address {
   margin-top: auto;
@@ -108,6 +108,9 @@ body.mobile-nav-open .logo {
   @media screen and (min-width: $tablet) {
     flex-direction: column;
   }
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+  }
 }
 
 .page-header .address__link {
@@ -116,7 +119,14 @@ body.mobile-nav-open .logo {
     line-height: 1.16;
     letter-spacing: 0.02em;
 
-    color: $secondary-text-color;
+    // color: $secondary-text-color;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    // color: $secondary-text-color;
   }
 }
 
@@ -142,8 +152,11 @@ body.mobile-nav-open .logo {
   @media screen and (max-width: $tablet - 1px) {
     margin-bottom: 32px;
   }
-  @media screen and (min-width: $tablet) {
+  @media screen and (max-width: $desktop - 1px) {
     margin-top: 10px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: 30px;
   }
 }
 .page-header .address__icon {

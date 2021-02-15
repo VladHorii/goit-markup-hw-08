@@ -1,15 +1,22 @@
 /* feature block */
 .feature-block {
   padding: 60px 0px;
+  @media screen and (min-width: $desktop) {
+    padding: 94px 0;
+  }
 }
 .feature-block__list {
   display: flex;
   flex-wrap: wrap;
   // flex-direction: column;
-  margin: -15px;
+  @media screen and (max-width: $desktop - 1px) {
+    margin: -15px;
+  }
 }
 .feature-block__card {
-  margin: 15px;
+  @media screen and (max-width: $desktop - 1px) {
+    margin: 15px;
+  }
 }
 .feature-block__icon {
   @include centeredFlex();
@@ -25,22 +32,29 @@
   @media screen and (min-width: $tablet) {
     max-width: 354px;
   }
+  @media screen and (min-width: $desktop) {
+    width: 270px;
+  }
   // margin: 0 auto;
 }
 .feature-block__card + .feature-block__card {
   @media screen and (max-width: $tablet - 1px) {
     margin-top: 30px;
   }
+  @media screen and (min-width: $desktop) {
+    margin-left: 30px;
+  }
 }
 .feature-block__title {
   margin-bottom: 10px;
-
-  text-align: center;
 
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  @media screen and (max-width: $tablet - 1px) {
+    text-align: center;
+  }
 }
 .feature-block__text {
   color: $secondary-text-color;
