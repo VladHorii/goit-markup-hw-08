@@ -1,9 +1,17 @@
 .filter {
-  // @include centeredFlex();
-  // margin-bottom: 50px;
+  display: flex;
+
+  flex-wrap: wrap;
+  // 50
+  margin: -4px;
+  margin-bottom: 40px;
+  @media screen and (min-width: $tablet) {
+    @include centeredFlex();
+  }
 }
-.filter__item + .filter__item {
+.filter__item {
   // margin-left: 8px;
+  margin: 4px;
 }
 .filter__button {
   background: $gray-color;
@@ -12,7 +20,7 @@
 
   font-weight: 500;
   letter-spacing: 0.03em;
-  // padding: 6px 22px;
+  padding: 6px 22px;
   line-height: 1.62;
   border-radius: 4px;
 

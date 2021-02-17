@@ -13,6 +13,9 @@
   cursor: pointer;
 
   transition: border $anim-time $animation;
+  @media screen and (min-width: $desktop) {
+    padding: 12px 12px 10px 42px;
+  }
 }
 
 .form__label {
@@ -65,9 +68,11 @@
 .form__group--checkbox {
   display: flex;
   align-items: center;
-
-  // margin-left: 12px;
   cursor: pointer;
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 12px;
+  }
 }
 .checkbox--icon {
   display: inline-block;
@@ -103,6 +108,10 @@
   font-size: 12px; // 14px
   line-height: 1.16; // 1.71
   color: $secondary-text-color;
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 a.form__link--policy {
   color: $accent-color;

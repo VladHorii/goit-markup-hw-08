@@ -4,4 +4,8 @@
   line-height: 1.18;
   font-weight: 700;
   text-align: center;
+  @media screen and (min-width: $desktop) {
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }

@@ -3,8 +3,10 @@
   padding: 60px 0;
 }
 .page-footer .logo {
-  text-align: center;
   margin-bottom: 20px;
+  @media screen and (max-width: $desktop - 1px) {
+    text-align: center;
+  }
 }
 
 .page-footer .address__list {
@@ -32,23 +34,32 @@
   @media screen and (max-width: $tablet - 1px) {
     margin: 60px 0;
   }
-  @media screen and (min-width: $tablet) {
-    // margin-left: auto;
+  @media screen and (min-width: $desktop) {
+    margin-top: 12px;
   }
 }
 .join__title {
-  text-align: center;
   margin-bottom: 20px;
+  @media screen and (max-width: $desktop - 1px) {
+    text-align: center;
+  }
 }
 .page-footer .address__link {
   color: $secondary-text-color;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 .page-footer .address__sity {
   color: $white-color;
 }
 .page-footer__nav {
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
     margin-left: 76px;
     margin-right: 165px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-right: 70px;
   }
 }

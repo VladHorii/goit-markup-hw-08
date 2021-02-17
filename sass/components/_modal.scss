@@ -23,15 +23,13 @@
 }
 
 .modal__window {
-  overflow: scroll;
+  overflow: hidden;
   position: absolute;
   top: 50%;
   left: 50%;
 
   width: calc(100% - 30px);
   height: 609px;
-  // min-width: 528px;
-  // height: 581px;
 
   padding: 40px;
 
@@ -45,6 +43,10 @@
   transition: transform $anim-time $animation 50ms;
   @media screen and (min-width: $tablet) {
     width: 454px;
+  }
+  @media screen and (min-width: $desktop) {
+    min-width: 528px;
+    height: 581px;
   }
 }
 .modal__btn {
@@ -60,7 +62,7 @@
   background-color: $white-color;
   border-radius: 50%;
   cursor: pointer;
-
+  color: $main-text-color;
   transition: color $anim-time $animation;
   &:hover,
   &:focus {

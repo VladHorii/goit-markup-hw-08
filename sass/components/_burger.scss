@@ -10,6 +10,14 @@
   }
   // @include centeredFlex;
 }
+.btn-burger--icon {
+  fill: $main-text-color;
+  transition: fill $anim-time $animation;
+}
+.btn-burger--icon:hover,
+.btn-burger--icon:focus {
+  fill: $accent-color;
+}
 .btn-burger .icon-cross {
   display: none;
 }

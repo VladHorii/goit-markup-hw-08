@@ -6,6 +6,7 @@
   @media screen and (min-width: $tablet) {
     height: 80px;
   }
+  z-index: 100;
 }
 .page-header .container {
   display: flex;
@@ -75,20 +76,6 @@ body.mobile-nav-open .logo {
   }
 }
 
-.link {
-  // display: flex;
-  // align-items: center;
-  color: $main-text-color;
-  transition: color $anim-time $animation;
-  &:hover,
-  &:focus {
-    color: $accent-color;
-  }
-}
-.nav__link--active {
-  // position: relative;
-  color: $accent-color;
-}
 .page-header .address {
   margin-top: auto;
   @media screen and (min-width: $tablet) {
@@ -110,6 +97,7 @@ body.mobile-nav-open .logo {
   }
   @media screen and (min-width: $desktop) {
     flex-direction: row;
+    align-items: center;
   }
 }
 
@@ -118,15 +106,12 @@ body.mobile-nav-open .logo {
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.02em;
-
-    // color: $secondary-text-color;
+    color: $secondary-text-color;
   }
   @media screen and (min-width: $desktop) {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-
-    // color: $secondary-text-color;
   }
 }
 
@@ -148,6 +133,7 @@ body.mobile-nav-open .logo {
     }
   }
 }
+
 .page-header .address__item + .address__item {
   @media screen and (max-width: $tablet - 1px) {
     margin-bottom: 32px;
@@ -170,4 +156,21 @@ body.mobile-nav-open .logo {
 
 .portfolio .page-header {
   border-bottom: 1px solid #ececec;
+}
+
+.link {
+  color: $main-text-color;
+  transition: color $anim-time $animation;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+  }
+}
+.nav__link--active {
+  // position: relative;
+  color: $accent-color;
 }

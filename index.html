@@ -14,7 +14,7 @@
     />
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
-  <body>
+  <body class="studio">
     <header class="page-header">
       <div class="container">
         <div class="logo">
@@ -22,15 +22,14 @@
             Web<span class="logo__subtext">Studio</span>
           </a>
         </div>
-
-        <button
-          class="btn-burger"
-          type="button"
-          aria-expanded="false"
-          aria-controls="menu-container"
-          data-menu-button
-        >
-          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+        <!-- aria-controls="menu-container" -->
+        <button class="btn-burger" type="button" aria-expanded="false" data-menu-button>
+          <svg
+            class="btn-burger--icon"
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
             <use class="icon-cross" href="./images/svg/burger.svg#icon-cross"></use>
             <use class="icon-menu" href="./images/svg/burger.svg#icon-menu"></use>
           </svg>
