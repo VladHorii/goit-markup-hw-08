@@ -42,6 +42,12 @@ body.mobile-nav-open, body.modal-open {
   overflow: hidden;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 15px;
@@ -827,6 +833,13 @@ body.mobile-nav-open .logo {
   */
 }
 
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .main-block {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bg-img/mobile@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-img/mobile@2x.jpg");
+  }
+}
+
 @media screen and (min-width: 768px) {
   .main-block {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bg-img/tablet.jpg");
@@ -834,10 +847,24 @@ body.mobile-nav-open .logo {
   }
 }
 
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .main-block {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bg-img/tablet@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-img/tablet@2x.jpg");
+  }
+}
+
 @media screen and (min-width: 1170px) {
   .main-block {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bg-img/desktop.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-img/desktop.jpg");
+  }
+}
+
+@media screen and (min-width: 1170px) and (min-device-pixel-ratio: 2), screen and (min-width: 1170px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1170px) and (min-resolution: 192dpi), screen and (min-width: 1170px) and (min-resolution: 2dppx) {
+  .main-block {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bg-img/desktop@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-img/desktop@2x.jpg");
   }
 }
 
@@ -1000,8 +1027,9 @@ body.mobile-nav-open .logo {
 }
 
 .team__img {
-  width: 100%;
   height: 460px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media screen and (min-width: 768px) {
@@ -1283,7 +1311,7 @@ body.mobile-nav-open .logo {
   display: inline-block;
   width: 16px;
   height: 15px;
-  margin-right: 8px;
+  margin-right: 5px;
   border: 2px solid #212121;
   border-radius: 2px;
   background: transparent;
@@ -1353,7 +1381,8 @@ a.form__link--policy {
 .btn-burger {
   background-color: transparent;
   border: none;
-  margin: 10px 0;
+  padding: 0;
+  margin: 0;
   margin-left: auto;
   width: 40px;
   height: 40px;
@@ -1369,6 +1398,8 @@ a.form__link--policy {
   fill: #212121;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 40px;
+  height: 40px;
 }
 
 .btn-burger--icon:hover,

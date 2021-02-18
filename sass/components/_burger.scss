@@ -1,7 +1,9 @@
 .btn-burger {
   background-color: transparent;
   border: none;
-  margin: 10px 0;
+  // margin: 10px 0;
+  padding: 0;
+  margin: 0;
   margin-left: auto;
   width: 40px;
   height: 40px;
@@ -9,11 +11,17 @@
     display: none;
   }
   // @include centeredFlex;
+  // outline: 1px solid red;
 }
 .btn-burger--icon {
   fill: $main-text-color;
   transition: fill $anim-time $animation;
+  // space
+  width: 40px;
+  height: 40px;
+  // outline: 2px solid blue;
 }
+
 .btn-burger--icon:hover,
 .btn-burger--icon:focus {
   fill: $accent-color;

@@ -42,6 +42,12 @@ body.mobile-nav-open, body.modal-open {
   overflow: hidden;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 15px;
@@ -1049,7 +1055,7 @@ body.mobile-nav-open .logo {
   display: inline-block;
   width: 16px;
   height: 15px;
-  margin-right: 8px;
+  margin-right: 5px;
   border: 2px solid #212121;
   border-radius: 2px;
   background: transparent;
@@ -1119,7 +1125,8 @@ a.form__link--policy {
 .btn-burger {
   background-color: transparent;
   border: none;
-  margin: 10px 0;
+  padding: 0;
+  margin: 0;
   margin-left: auto;
   width: 40px;
   height: 40px;
@@ -1135,6 +1142,8 @@ a.form__link--policy {
   fill: #212121;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 40px;
+  height: 40px;
 }
 
 .btn-burger--icon:hover,

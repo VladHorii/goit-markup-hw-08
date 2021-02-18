@@ -48,7 +48,7 @@
   border-radius: 0px 0px 4px 4px;
 }
 .team__img {
-  width: 100%;
+  // width: 100%;
   height: 460px;
   @media screen and (min-width: $tablet) {
     height: 374px;
@@ -56,6 +56,7 @@
   @media screen and (min-width: $desktop) {
     height: 260px;
   }
+  object-fit: cover;
 }
 .team__about {
   padding-top: 30px;

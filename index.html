@@ -22,20 +22,20 @@
             Web<span class="logo__subtext">Studio</span>
           </a>
         </div>
-        <!-- aria-controls="menu-container" -->
-        <button class="btn-burger" type="button" aria-expanded="false" data-menu-button>
-          <svg
-            class="btn-burger--icon"
-            width="40"
-            height="40"
-            aria-label="Переключатель мобильного меню"
-          >
+        <button
+          class="btn-burger"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg class="btn-burger--icon" aria-label="Переключатель мобильного меню">
             <use class="icon-cross" href="./images/svg/burger.svg#icon-cross"></use>
             <use class="icon-menu" href="./images/svg/burger.svg#icon-menu"></use>
           </svg>
         </button>
-        <!-- Только в бургере -->
-        <div class="menu-container" data-menu>
+
+        <div class="menu-container" id="menu-container" data-menu>
           <nav class="page-nav">
             <ul class="nav">
               <li class="nav__item">
@@ -171,33 +171,87 @@
           <h2 class="preview__title block-title">Чем мы занимаемся</h2>
           <ul class="preview__body">
             <li class="preview__box">
-              <img
+              <!-- <img
                 class="preview__img"
-                src="./images/main/box-1.jpg"
+                src="./images/main/preview/box-1.jpg"
                 alt="Планшет с клавиатурой"
                 width="370"
                 height="294"
-              />
+              /> -->
+              <picture>
+                <source
+                  srcset="
+                    ./images/main/preview/box-1.webp    1x,
+                    ./images/main/preview/box-1@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="preview__img"
+                  srcset="
+                    ./images/main/preview/box-1.jpg    1x,
+                    ./images/main/preview/box-1@2x.jpg 2x
+                  "
+                  src="./images/main/preview/box-1.jpg"
+                  alt="Планшет с клавиатурой"
+                />
+              </picture>
               <p class="preview__description">Десктопные приложения</p>
             </li>
             <li class="preview__box">
-              <img
+              <!-- <img
                 class="preview__img"
                 src="./images/main/box-2.jpg"
                 alt="Ноутбук"
                 width="370"
                 height="294"
-              />
+              /> -->
+              <picture>
+                <source
+                  srcset="
+                    ./images/main/preview/box-2.webp    1x,
+                    ./images/main/preview/box-2@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="preview__img"
+                  srcset="
+                    ./images/main/preview/box-2.jpg    1x,
+                    ./images/main/preview/box-2@2x.jpg 2x
+                  "
+                  src="./images/main/preview/box-2.jpg"
+                  alt="Ноутбук"
+                />
+              </picture>
               <p class="preview__description">Мобильные приложения</p>
             </li>
             <li class="preview__box">
-              <img
+              <!-- <img
                 class="preview__img"
                 src="./images/main/box-3.jpg"
                 alt="Планшет в руке"
                 width="370"
                 height="294"
-              />
+              /> -->
+              <picture>
+                <source
+                  srcset="
+                    ./images/main/preview/box-3.webp    1x,
+                    ./images/main/preview/box-3@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="preview__img"
+                  srcset="
+                    ./images/main/preview/box-3.jpg    1x,
+                    ./images/main/preview/box-3@2x.jpg 2x
+                  "
+                  src="./images/main/preview/box-3.jpg"
+                  alt="Планшет в руке"
+                />
+              </picture>
               <p class="preview__description">Дизайнерские решения</p>
             </li>
           </ul>
@@ -210,12 +264,32 @@
 
           <ul class="team__body">
             <li class="team__card">
-              <img
+              <!-- <img
                 src="./images/main/avatar-1.jpg"
                 alt="Игорь Демьяненко"
                 class="team__img"
                 width="300"
-              />
+              /> -->
+
+              <picture>
+                <source
+                  srcset="
+                    ./images/main/team/avatar-1.webp    1x,
+                    ./images/main/team/avatar-1@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="team__img"
+                  srcset="
+                    ./images/main/team/avatar-1.jpg    1x,
+                    ./images/main/team/avatar-1@2x.jpg 2x
+                  "
+                  src="./images/main/team/avatar-1.jpg"
+                  alt="Игорь Демьяненко"
+                />
+              </picture>
+
               <div class="team__about">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__job">Product Designer</p>
@@ -255,12 +329,30 @@
               </div>
             </li>
             <li class="team__card">
-              <img
+              <!-- <img
                 src="./images/main/avatar-2.jpg"
                 alt="Ольга Репина"
                 class="team__img"
                 width="300"
-              />
+              /> -->
+              <picture>
+                <source
+                  srcset="
+                    ./images/main/team/avatar-2.webp    1x,
+                    ./images/main/team/avatar-2@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="team__img"
+                  srcset="
+                    ./images/main/team/avatar-2.jpg    1x,
+                    ./images/main/team/avatar-2@2x.jpg 2x
+                  "
+                  src="./images/main/team/avatar-2.jpg"
+                  alt="Ольга Репина"
+                />
+              </picture>
               <div class="team__about">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__job">Frontend Developer</p>
@@ -299,12 +391,30 @@
               </div>
             </li>
             <li class="team__card">
-              <img
+              <!-- <img
                 src="./images/main/avatar-3.jpg"
                 alt="Николай Тарасов"
                 class="team__img"
                 width="300"
-              />
+              /> -->
+              <picture>
+                <source
+                  srcset="
+                    ./images/main/team/avatar-3.webp    1x,
+                    ./images/main/team/avatar-3@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="team__img"
+                  srcset="
+                    ./images/main/team/avatar-3.jpg    1x,
+                    ./images/main/team/avatar-3@2x.jpg 2x
+                  "
+                  src="./images/main/team/avatar-3.jpg"
+                  alt="Николай Тарасов"
+                />
+              </picture>
               <div class="team__about">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p class="team__job">Marketing</p>
@@ -343,12 +453,30 @@
               </div>
             </li>
             <li class="team__card">
-              <img
+              <!-- <img
                 src="./images/main/avatar-4.jpg"
                 alt="Михаил Ермаков"
                 class="team__img"
                 width="300"
-              />
+              /> -->
+              <picture>
+                <source
+                  srcset="
+                    ./images/main/team/avatar-4.webp    1x,
+                    ./images/main/team/avatar-4@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="team__img"
+                  srcset="
+                    ./images/main/team/avatar-4.jpg    1x,
+                    ./images/main/team/avatar-4@2x.jpg 2x
+                  "
+                  src="./images/main/team/avatar-4.jpg"
+                  alt="Михаил Ермаков"
+                />
+              </picture>
               <div class="team__about">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p class="team__job">UI Designer</p>
