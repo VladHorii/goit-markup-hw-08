@@ -13,10 +13,10 @@
 }
 .client__list {
   display: flex;
-  flex-wrap: wrap;
 
   @media screen and (max-width: $desktop - 1px) {
     margin: -15px;
+    flex-wrap: wrap;
   }
 }
 .client__card {

@@ -7,10 +7,11 @@
 }
 .feature-block__list {
   display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   // flex-direction: column;
   @media screen and (max-width: $desktop - 1px) {
     margin: -15px;
+    flex-wrap: wrap;
   }
 }
 .feature-block__card {
